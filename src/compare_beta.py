@@ -6,7 +6,7 @@ def compare_price_difference(cost_beta):
     base_cost = cost_beta[base_B]
     print(f"\n📊 Price difference compared to B = {base_B}:")
     for B in keys[1:]:
-        diff = cost_beta[B] - base_cost
+        diff = base_cost - cost_beta[B]
         print(f"B = {B}: Difference = {diff:.2f}")
 
 def compare_best_case(cost_best, cost_beta):
